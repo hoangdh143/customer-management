@@ -30,21 +30,20 @@ public class Customer {
 
     private String address;
 
-    @JsonFormat(pattern = "yyyy-MM-dd")
-    private Date birthday;
+    private Integer birthYear;
 
     private Long income;
 
     public Customer() {
     }
 
-    public Customer(@Length(max = 100) String name, String phone, String email, String company, String address, Date birthday, Long income) {
+    public Customer(@Length(max = 100) String name, String phone, String email, String company, String address, Integer birthYear, Long income) {
         this.name = name;
         this.phone = phone;
         this.email = email;
         this.company = company;
         this.address = address;
-        this.birthday = birthday;
+        this.birthYear = birthYear;
         this.income = income;
     }
 }

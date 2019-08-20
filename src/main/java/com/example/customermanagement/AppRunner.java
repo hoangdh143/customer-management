@@ -19,7 +19,7 @@ public class AppRunner implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        Customer customer = new Customer("John", "097777666", "alb@abc.com", "Some Company", "Some Address", new Date(), (long) 9000000);
+        Customer customer = new Customer("John", "097777666", "alb@abc.com", "Some Company", "Some Address", 1990, (long) 9000000);
         customerRepository.save(customer);
     }
 }
